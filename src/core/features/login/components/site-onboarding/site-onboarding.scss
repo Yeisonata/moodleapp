@@ -1,11 +1,69 @@
 @use "theme/globals" as *;
 
+
 :host {
+      html,
+    body,ion-header,
+    ion-content {
+        background-color: #0B4385 !important;
+        --background: #0B4385 !important;
+    }
+    ion-page,
+    ion-header,
+    ion-toolbar,
+    ion-content {
+        background-color: #0B4385 !important;
+        --background: #0B4385 !important;
+    }
+    ion-header {
+        --background: #0B4385 !important;
+        --ion-toolbar-background: #0B4385 !important;
+        --ion-toolbar-color: white !important;
+    }
+    //botones
+   ion-button {
+  --background: transparent !important;
+  --color: $white !important; /* Texto blanco */
+  --border-color: $green !important; /* Verde corporativo */
+  --border-radius: 6px !important;
+  --box-shadow: none !important;
+  --padding-start: 8px !important;
+  --padding-end: 8px !important;
+  --border-width: 2px !important;
+  --border-style: solid;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+
+  &:hover {
+    --background: $green !important;
+    --color: $white !important;
+  }
+
+  &:active {
+    --background: color.adjust($green, $lightness: -10%) !important;
+  }
+}
+
+/* Variante azul */
+ion-button.blue {
+  --border-color: $info !important;
+
+  &:hover {
+    --background: $info !important;
+  }
+
+  &:active {
+    --background: color.adjust($info, $lightness: -10%) !important;
+  }
+}
+
     .core-login-onboarding-step {
         padding: 10px 20px;
         text-align: center;
         margin: 0 auto;
-
+  
         @include media-breakpoint-up(md) {
             max-width: 80%;
         }
@@ -30,5 +88,7 @@
 
     h1 {
         font-size: var(--mdl-typography-heading3-fontSize);
+        color: white;
+        font-weight: 400;
     }
 }

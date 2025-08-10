@@ -9,7 +9,14 @@
  * -------------------------------------------
  */
 :root {
-
+    --core-login-background: #0B4385;
+    --core-login-background-dark: #0B4385;
+    --core-login-text-color: white;
+    --core-login-text-color-dark: white;
+    --core-login-button-outline: transparent;
+    --core-login-button-outline-dark: transparent;
+    --core-login-loading-color: white;
+    --core-login-loading-color-dark: white;
 }
 
 /*
@@ -17,5 +24,67 @@
  * -------------------------------------------
  */
 :root.dark {
-
+    --core-login-background: #0B4385;
+    --core-login-background-dark: #0B4385;
+    --core-login-text-color: white;
+    --core-login-text-color-dark: white;
+    --core-login-button-outline: transparent;
+    --core-login-button-outline-dark: transparent;
+    --core-login-loading-color: white;
+    --core-login-loading-color-dark: white;
 }
+
+// Variables adaptadas - Tema "Pino Verde Liceo"
+
+
+$white:       #ffffff !default;
+$gray-100:    #f8f9fa !default;
+$gray-200:    #e9ecef !default;
+$gray-300:    #dee2e6 !default;
+$gray-400:    #ced4da !default;
+$gray-500:    #8f959e !default;
+$gray-600:    #6a737b !default;
+$gray-700:    #495057 !default;
+$gray-800:    #343a40 !default;
+$gray-900:    #222222 !default;
+$azul: #0B4385 !default; // azul oscuro personalizado
+
+$blue:        #0f6cbf !default; // acento / links
+$cyan:        #008196 !default;
+$green:       #2c8c3a !default; // pino verde - principal
+$red:         #ca3120 !default;
+$yellow:      #f0ad4e !default;
+
+$brand-color: #2c8c3a !default; // color principal (pino)
+$text-color:               $gray-900 !default;
+$text-color-rgb:           color-to-rgb-list($text-color) !default;
+$text-color-dark:          $white !default;
+
+$background-color:          #f6faf6 !default; // fondo muy suave verdoso
+$background-color-rgb:      color-to-rgb-list($background-color) !default;
+$background-color-dark:     #183023 !default; // oscuro tipo pino profundo
+$ion-item-background:      $white !default;
+
+$primary:      $brand-color !default;        // botones principales (verde)
+$primary-dark: color.scale($brand-color, $lightness: -12%) !default;
+$secondary:    $blue !default;               // acento azul
+$danger:       $red !default;
+$warning:      $yellow !default;
+$success:      $green !default;
+$info:         $blue !default;
+$light:        $gray-100 !default;
+$medium:       $gray-700 !default;
+$dark:         $gray-900 !default;
+
+$colors:  (
+    primary: (light: $primary, dark: $primary-dark),
+    secondary: (light: $secondary, dark: $gray-700),
+    success: (light: $success),
+    warning: (light: $warning),
+    danger:  (light: $danger),
+    info: (light: $info),
+    light: (light: $light, dark: $dark),
+    medium: (light: $medium, dark: $gray-200),
+    dark: (light: $dark, dark: $light),
+) !default;
+
