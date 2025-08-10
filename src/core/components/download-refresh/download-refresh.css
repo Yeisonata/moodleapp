@@ -1,0 +1,14 @@
+:host {
+  font-size: 1.4rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: center;
+  min-height: var(--a11y-sizing-minTargetSize);
+  min-width: var(--a11y-sizing-minTargetSize);
+  position: relative;
+}
+:host > * {
+  position: absolute;
+}/*# sourceMappingURL=download-refresh.css.map */

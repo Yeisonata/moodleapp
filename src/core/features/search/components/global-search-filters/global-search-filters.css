@@ -1,0 +1,13 @@
+:host {
+  --heading-text-color: var(--gray-700);
+}
+:host ion-item.heading {
+  color: var(--heading-text-color);
+}
+:host ion-item.heading ion-label {
+  margin-bottom: 0;
+}
+
+:host-context(:root.dark) {
+  --heading-text-color: var(--gray-400);
+}/*# sourceMappingURL=global-search-filters.css.map */

@@ -1,0 +1,845 @@
+/**
+ * App Global variables SCSS
+ * ----------------------------------------------------------------------------
+ * Place here the different files you should import to use global variables.
+ */
+/**
+ * Imported ionic string functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.string.scss
+ */
+/**
+ * Imported ionic color functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.color.scss
+ */
+/**
+ * Imported ionic color functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.font.scss
+ */
+/**
+ * Convert a font size to a dynamic font size.
+ * Fonts that participate in Dynamic Type should use
+ * dynamic font sizes.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param unit (optional) - The unit to convert to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * a maximum font size.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param maxScale - The maximum scale of the font (i.e. 2.5 for a maximum 250% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * a minimum font size.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param minScale - The minimum scale of the font (i.e. 0.8 for a minimum 80% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * maximum and minimum font sizes.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param minScale - The minimum scale of the font (i.e. 0.8 for a minimum 80% scale).
+ * @param maxScale - The maximum scale of the font (i.e. 2.5 for a maximum 250% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Imported ionic mixins for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.mixins.scss
+ */
+/**
+ * A heuristic that applies CSS to tablet
+ * viewports.
+ *
+ * Usage:
+ * @include tablet-viewport() {
+ *   :host {
+ *     background-color: green;
+ *   }
+ * }
+ */
+/**
+ * A heuristic that applies CSS to mobile
+ * viewports (i.e. phones, not tablets).
+ *
+ * Usage:
+ * @include mobile-viewport() {
+ *   :host {
+ *     background-color: blue;
+ *   }
+ * }
+ */
+/**
+ * Imported ionic mixins for SCSS from different components
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/components/grid/grid.mixins.scss
+ */
+/**
+ * App custom mixins for SCSS
+ * ----------------------------------------------------------------------------
+ * Place here our custom mixins.
+ */
+/**
+ * Same as item-push-svg-url but admits flip-rtl
+ */
+/*
+ * App Custom App variables SCSS
+ * ----------------------------------------------------------------------------
+ * Place here all custom app variables.
+ */
+/*
+ * App Global variables SCSS
+ * ----------------------------------------------------------------------------
+ * Place here all global variables.
+ */
+:root {
+  --ion-font-family: "Inter", sans-serif;
+}
+
+/**
+ * Layout Breakpoints
+ *
+ * https://ionicframework.com/docs/layout/grid#default-breakpoints
+ */
+:root.force-safe-area-margins {
+  --ion-safe-area-left: 40px;
+  --ion-safe-area-right: 40px;
+  --ion-safe-area-top: 40px;
+  --ion-safe-area-bottom: 40px;
+}
+
+:root {
+  --zoom-ratio: 1;
+  --zoom-level: calc(100% * var(--zoom-ratio));
+  zoom: calc(100% * var(--zoom-ratio));
+  --root-safe-area-left: calc(var(--ion-safe-area-left, 0px) / var(--zoom-ratio));
+  --root-safe-area-right: calc(var(--ion-safe-area-right, 0px) / var(--zoom-ratio));
+  --root-safe-area-top: calc(var(--ion-safe-area-top, 0px) / var(--zoom-ratio));
+  --root-safe-area-bottom: calc(var(--ion-safe-area-bottom, 0px) / var(--zoom-ratio));
+  --root-keyboard-height: calc(var(--keyboard-height, 0px) / var(--zoom-ratio));
+}
+:root.ios {
+  font-size: calc(100% * var(--zoom-ratio));
+}
+:root > body {
+  --ion-safe-area-left: var(--root-safe-area-left);
+  --ion-safe-area-right: var(--root-safe-area-right);
+  --ion-safe-area-top: var(--root-safe-area-top);
+  --ion-safe-area-bottom: var(--root-safe-area-bottom);
+  --keyboard-height: var(--root-keyboard-height);
+}
+
+a {
+  color: var(--core-link-color);
+  cursor: pointer;
+}
+a[core-link] {
+  text-decoration: none;
+}
+
+:root[dir=rtl] {
+  --rotate-expandable: rotate(-90deg);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.core-bold {
+  font-weight: bold;
+}
+
+.core-text-sm {
+  font: var(--mdl-typography-body-font-sm);
+}
+
+.core-text-md {
+  font: var(--mdl-typography-body-font-md);
+}
+
+.core-text-lg {
+  font: var(--mdl-typography-body-font-lg);
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+.img-responsive[height] {
+  height: auto;
+}
+
+.opacity-hide {
+  opacity: 0;
+}
+
+.core-big {
+  font-size: 115%;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.block {
+  display: block;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 8px;
+}
+
+.margin-bottom-md {
+  margin-bottom: 12px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-lg {
+  font-size: 1.7rem;
+}
+
+.font-sm {
+  font-size: 1.2rem;
+}
+
+.text-primary,
+p.text-primary,
+.text-primary p {
+  color: var(--ion-color-primary) !important;
+}
+
+.text-secondary,
+p.text-secondary,
+.text-secondary p {
+  color: var(--ion-color-secondary) !important;
+}
+
+.text-success,
+p.text-success,
+.text-success p {
+  color: var(--ion-color-success) !important;
+}
+
+.text-warning,
+p.text-warning,
+.text-warning p {
+  color: var(--ion-color-warning) !important;
+}
+
+.text-danger,
+p.text-danger,
+.text-danger p {
+  color: var(--ion-color-danger) !important;
+}
+
+.text-info,
+p.text-info,
+.text-info p {
+  color: var(--ion-color-info) !important;
+}
+
+.text-light,
+p.text-light,
+.text-light p {
+  color: var(--ion-color-light) !important;
+}
+
+.text-medium,
+p.text-medium,
+.text-medium p {
+  color: var(--ion-color-medium) !important;
+}
+
+.text-dark,
+p.text-dark,
+.text-dark p {
+  color: var(--ion-color-dark) !important;
+}
+
+ion-toolbar {
+  --min-height: var(--core-header-toolbar-height);
+}
+
+ion-tabs.hide-header ion-header {
+  display: none;
+}
+
+ion-list {
+  padding: 0 !important;
+}
+
+.safe-area-padding,
+.safe-area-padding-horizontal {
+  padding-inline-start: var(--ion-safe-area-left);
+  padding-inline-end: var(--ion-safe-area-right);
+}
+
+.safe-area-margin,
+.safe-margin-horizontal {
+  margin-inline-start: var(--ion-safe-area-left);
+  margin-inline-end: var(--ion-safe-area-right);
+}
+
+.ion-padding.safe-area-padding-horizontal {
+  padding-inline-start: calc(var(--ion-safe-area-left) + 16px);
+  padding-inline-end: calc(var(--ion-safe-area-right) + 16px);
+}
+
+.ion-margin.safe-margin-horizontal {
+  margin-inline-start: calc(var(--ion-safe-area-left) + 16px);
+  margin-inline-end: calc(var(--ion-safe-area-right) + 16px);
+}
+
+ion-app > ion-router-outlet > .ion-page:not(page-core-mainmenu),
+ion-app > ion-router-outlet > page-core-mainmenu > ion-tabs.placement-side > .tabs-inner,
+ion-app > ion-modal > .ion-page {
+  height: calc(100% - var(--ion-safe-area-bottom, 0px));
+}
+ion-app > ion-router-outlet > .ion-page:not(page-core-mainmenu) *,
+ion-app > ion-router-outlet > page-core-mainmenu > ion-tabs.placement-side > .tabs-inner *,
+ion-app > ion-modal > .ion-page * {
+  --ion-safe-area-bottom: 0px;
+}
+
+ion-app > ion-modal {
+  --ion-safe-area-bottom: inherit;
+}
+
+ion-app > ion-modal.core-modal-lateral {
+  --ion-safe-area-top: inherit;
+}
+
+ion-tabs.placement-side .tabs-inner {
+  --ion-safe-area-left: 0px;
+}
+
+ion-tabs.placement-bottom .tabs-inner {
+  --ion-safe-area-bottom: 0px;
+}
+
+core-tabs swiper-slide, core-tabs-outlet swiper-slide {
+  --background: var(--core-tab-background);
+  --color: var(--core-tab-color);
+  --border-color: var(--core-tab-border-color);
+  --color-active: var(--core-tab-color-active);
+  --border-color-active: var(--core-tab-border-color-active);
+  --color-selected: var(--border-color-active);
+  --font-weight-active: var(--core-tab-font-weight-active);
+}
+
+core-split-view.menu-and-content .menu {
+  --ion-safe-area-right: 0px;
+}
+core-split-view.menu-and-content .content-outlet {
+  --ion-safe-area-left: 0px;
+}
+
+ion-app {
+  height: calc(100% - var(--keyboard-height, 0px));
+}
+
+.core-submit-hidden-enter {
+  position: absolute;
+  visibility: hidden;
+  left: -1000px;
+}
+
+.item .core-input-footnote {
+  width: 100%;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: var(--text-size);
+}
+
+[aria-current=page],
+.item.item-current {
+  border-inline-start: calc(var(--ion-safe-area-left) + var(--selected-item-border-width)) solid var(--selected-item-color);
+  --padding-start: calc(16px - var(--selected-item-border-width));
+}
+[aria-current=page] > *,
+.item.item-current > * {
+  --ion-safe-area-left: 0px;
+}
+[aria-current=page]::part(native),
+.item.item-current::part(native) {
+  --ion-safe-area-left: 0px;
+}
+
+.text-gray {
+  color: var(--gray-500);
+}
+
+.text-dimmed {
+  opacity: 0.7;
+}
+
+img[core-external-content]:not([src]) {
+  visibility: hidden;
+}
+
+.core-course-module-handler:not(.addon-mod-label-handler) .item-heading .filter_mathjaxloader_equation mjx-container {
+  display: inline !important;
+}
+
+.section-summary core-format-text img {
+  border-radius: var(--mdl-shape-borderRadius-lg);
+}
+
+.list-item-limited-width,
+ion-content.limited-width > :not([slot]) {
+  max-width: var(--list-item-max-width);
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+ion-content.limited-width > :not([slot]) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.limited-width > core-loading:not([slot]),
+.menu > core-loading:not([slot]) {
+  min-height: 100%;
+}
+.limited-width > core-loading:not([slot]).core-loading-loaded,
+.menu > core-loading:not([slot]).core-loading-loaded {
+  --contents-display: flex;
+  flex-direction: column;
+}
+
+.core-anchor,
+core-format-text a {
+  color: var(--core-link-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.core-horizontal-scroll {
+  display: block;
+  overflow-x: scroll;
+}
+.core-horizontal-scroll .safe-area-pseudo-padding-start {
+  padding-inline-start: var(--ion-safe-area-left);
+  padding-inline-end: 0px;
+}
+.core-horizontal-scroll .safe-area-pseudo-padding-end {
+  padding-inline-start: 0px;
+  padding-inline-end: var(--ion-safe-area-right);
+}
+
+mark,
+.matchtext {
+  background-color: var(--text-hightlight-background-color);
+}
+
+.core-monospaced {
+  font-family: var(--mdl-typography-monospace-font);
+}
+
+.core-scanning-qr .ion-page, .core-scanning-qr ion-modal::part(content) {
+  background-color: transparent !important;
+  --background: transparent;
+}
+.core-scanning-qr ion-content, .core-scanning-qr ion-backdrop, .core-scanning-qr ion-modal:not(.core-modal-fullscreen), .core-scanning-qr ion-tabs {
+  display: none !important;
+}
+
+.core-browser-copy-area {
+  display: none;
+}
+
+.core-padding-0 {
+  padding-inline-start: 0px;
+}
+
+.core-padding-1 {
+  padding-inline-start: 16px;
+}
+
+.core-padding-2 {
+  padding-inline-start: 32px;
+}
+
+.core-padding-3 {
+  padding-inline-start: 48px;
+}
+
+.core-padding-4 {
+  padding-inline-start: 64px;
+}
+
+.core-padding-5 {
+  padding-inline-start: 80px;
+}
+
+.core-padding-6 {
+  padding-inline-start: 96px;
+}
+
+.core-padding-7 {
+  padding-inline-start: 112px;
+}
+
+.core-padding-8 {
+  padding-inline-start: 128px;
+}
+
+.core-padding-9 {
+  padding-inline-start: 144px;
+}
+
+.core-padding-10 {
+  padding-inline-start: 160px;
+}
+
+.core-padding-11 {
+  padding-inline-start: 176px;
+}
+
+.core-padding-12 {
+  padding-inline-start: 192px;
+}
+
+.core-padding-13 {
+  padding-inline-start: 208px;
+}
+
+.core-padding-14 {
+  padding-inline-start: 224px;
+}
+
+.core-padding-15 {
+  padding-inline-start: 240px;
+}
+
+details summary {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+textarea {
+  min-height: var(--a11y-sizing-minTargetSize);
+}
+
+textarea:not([core-auto-rows]) {
+  height: 200px;
+}
+
+.core-media-adapt-width {
+  max-width: 100%;
+}
+
+img.core-media-adapt-width {
+  height: auto;
+}
+
+audio.core-media-adapt-width {
+  width: 100%;
+}
+
+ion-item-divider.item .expandable-status-icon,
+ion-item.item .expandable-status-icon,
+td .expandable-status-icon {
+  font-size: 1.125rem;
+  transition: transform 200ms ease-in-out;
+  margin-inline-end: 16px;
+}
+ion-item-divider.item .expandable-status-icon.expandable-status-icon-expanded,
+ion-item.item .expandable-status-icon.expandable-status-icon-expanded,
+td .expandable-status-icon.expandable-status-icon-expanded {
+  transform: var(--rotate-expandable);
+}
+
+.ion-activatable:focus-visible,
+.clickable:focus-visible,
+.ion-focusable.ion-focused:focus-visible,
+.ion-selectable:focus-visible {
+  --background-focused: var(--background-focused, var(--a11y-background-focus-background));
+  --background-focused-opacity: var(--a11y-background-focus-opacity);
+  --background: var(--a11y-background-focus-background-rgb);
+  background: var(--background);
+  outline: none;
+}
+@supports not selector(:focus-visible) {
+  :focus {
+    --background-focused: var(--background-focused, var(--a11y-background-focus-background));
+    --background-focused-opacity: var(--a11y-background-focus-opacity);
+    --background: var(--a11y-background-focus-background-rgb);
+    background: var(--background);
+    outline: none;
+  }
+}
+
+:not(.hydrated):not(.native-input):not(.native-textarea):focus-visible {
+  outline: var(--a11y-shadow-focus-outline);
+}
+:not(.hydrated):not(.native-input):not(.native-textarea):focus-visible:is(input:not([type]),
+input[type^=date],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week]) {
+  outline-color: var(--primary);
+}
+@supports not selector(:focus-visible) {
+  :focus {
+    outline: var(--a11y-shadow-focus-outline);
+  }
+  :focus:is(input:not([type]),
+  input[type^=date],
+  input[type=email],
+  input[type=month],
+  input[type=number],
+  input[type=password],
+  input[type=search],
+  input[type=tel],
+  input[type=text],
+  input[type=time],
+  input[type=url],
+  input[type=week]) {
+    outline-color: var(--primary);
+  }
+}
+
+ion-input[class],
+ion-textarea[class],
+ion-searchbar[class],
+core-rich-text-editor {
+  --placeholder-color: var(--ion-placeholder-color);
+  --placeholder-opacity: var(--mdl-placeholder-opacity);
+}
+
+ion-content.disable-scroll-y::part(scroll) {
+  touch-action: auto;
+  overflow-y: hidden;
+  overscroll-behavior-y: auto;
+  z-index: auto;
+  will-change: auto;
+}
+
+ion-grid.core-no-grid > ion-row {
+  display: block;
+}
+
+.core-footer-shadow [collapsible-footer] {
+  box-shadow: var(--drop-shadow-top, none);
+  clip-path: inset(-8px 0px 0px 0px);
+}
+
+[collapsible-footer] {
+  transition: box-shadow 0.5s;
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+  display: block;
+  background-color: var(--core-collapsible-footer-background);
+}
+[collapsible-footer] .ion-margin {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+[collapsible-footer].is-active {
+  height: var(--core-collapsible-footer-height, auto);
+  transition: all 200ms ease-in-out;
+}
+[collapsible-footer].is-active.footer-collapsed {
+  --core-collapsible-footer-height: 0;
+  opacity: 0;
+}
+[collapsible-footer].is-active.has-module-nav.footer-collapsed {
+  --core-collapsible-footer-height: auto;
+  opacity: 1;
+}
+[collapsible-footer].is-active.has-module-nav.footer-collapsed core-course-module-navigation {
+  height: 0;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+[collapsible-footer].is-active.footer-expanded {
+  --core-collapsible-footer-height: auto;
+}
+
+.keyboard-is-open ion-content {
+  --core-collapsible-footer-height: 0px !important;
+}
+.keyboard-is-open ion-content [collapsible-footer] {
+  height: 0;
+}
+
+@media (min-width: 768px) {
+  .adaptable-buttons-row,
+  .adaptable-buttons-row-reverse {
+    display: flex;
+    flex-direction: row;
+  }
+  .adaptable-buttons-row ion-button,
+  .adaptable-buttons-row-reverse ion-button {
+    flex: 1;
+  }
+  .adaptable-buttons-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+.has-spacer,
+.core-flex-fill {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  flex-grow: 1;
+}
+.has-spacer .spacer-top,
+.core-flex-fill .spacer-top {
+  flex-grow: 1;
+  align-content: flex-end;
+}
+.has-spacer .spacer,
+.core-flex-fill .spacer {
+  flex-grow: 1;
+}
+
+.core-flex-no-grow {
+  flex-grow: 0;
+}
+
+.core-loading {
+  position: relative;
+  background-color: var(--loader-background-color);
+  color: transparent;
+  overflow: hidden;
+  display: var(--loader-display);
+  border-radius: var(--loader-radius);
+  transition: all 200ms ease-in-out;
+  min-height: 8px;
+  min-width: 50px;
+}
+.core-loading > * {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+.core-loading::after {
+  content: "";
+  position: absolute;
+  left: -45%;
+  height: 100%;
+  width: 45%;
+  background-image: linear-gradient(to left, rgb(var(--loader-shine)/5%), rgb(var(--loader-shine)/30%), rgb(var(--loader-shine)/60%), rgb(var(--loader-shine)/30%), rgb(var(--loader-shine)/5%));
+  animation: loading 1s infinite;
+  display: block;
+  top: 0;
+  bottom: 0;
+}
+
+video::-webkit-media-text-track-display {
+  white-space: normal !important;
+}
+
+*:fullscreen {
+  padding-top: var(--root-safe-area-top);
+  padding-left: var(--root-safe-area-left);
+  padding-bottom: var(--root-safe-area-bottom);
+  padding-right: var(--root-safe-area-right);
+}
+
+/**
+ * https://github.com/ionic-team/ionic-framework/blob/6ffbdbb3b2b69290cf25753d535bc7483bd7c6e8/BREAKING.md#css-utilities
+ */
+[hidden], .hidden {
+  display: none !important;
+}
+
+.x-scrollable {
+  overflow-x: auto;
+  display: block;
+}
+
+.sr-only, .accesshide {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  display: block !important;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}/*# sourceMappingURL=theme.base.css.map */

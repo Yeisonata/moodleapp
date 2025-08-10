@@ -1,0 +1,60 @@
+table.core-table {
+  border-collapse: collapse;
+  line-height: 20px;
+  width: 98%;
+  margin: 1em auto;
+  color: var(--text-color);
+}
+table.core-table thead th {
+  vertical-align: bottom;
+  font-weight: bold;
+  font-size: var(--mdl-typography-body-fontSize-md);
+  background-color: var(--core-table-header-background);
+}
+table.core-table tbody th {
+  font-weight: normal;
+}
+table.core-table tbody td {
+  font-size: var(--mdl-typography-body-fontSize-lg);
+}
+table.core-table th, table.core-table td {
+  padding: 8px;
+  white-space: normal;
+  text-align: start;
+}
+table.core-table tr {
+  border-bottom: 1px solid var(--core-table-border-color);
+}
+table.core-table .odd {
+  --cell-background: var(--core-table-odd-cell-background);
+  --cell-hover: var(--core-table-odd-cell-hover);
+}
+table.core-table .even {
+  --cell-background: var(--core-table-even-cell-background);
+  --cell-hover: var(--core-table-even-cell-hover);
+}
+table.core-table .odd td, table.core-table .odd th, table.core-table .odd th[aria-current=page], table.core-table .even td, table.core-table .even th, table.core-table .even th[aria-current=page] {
+  background-color: var(--cell-background);
+}
+table.core-table .odd td:hover, table.core-table .odd th:hover, table.core-table .odd th[aria-current=page]:hover, table.core-table .even td:hover, table.core-table .even th:hover, table.core-table .even th[aria-current=page]:hover {
+  background-color: var(--cell-hover);
+}
+table.core-table tbody.auto-striped tr:nth-child(odd) {
+  background-color: var(--core-table-odd-cell-background);
+}
+table.core-table tbody.auto-striped tr:nth-child(odd):hover {
+  background-color: var(--core-table-even-odd-hover);
+}
+table.core-table tbody.auto-striped tr:nth-child(even) {
+  background-color: var(--core-table-even-cell-background);
+}
+table.core-table tbody.auto-striped tr:nth-child(even):hover {
+  background-color: var(--core-table-even-cell-hover);
+}
+table.core-table .ion-no-border {
+  border: 0 !important;
+}
+table.core-table .dimmed_text,
+table.core-table .hidden {
+  opacity: 0.7;
+}/*# sourceMappingURL=table.css.map */

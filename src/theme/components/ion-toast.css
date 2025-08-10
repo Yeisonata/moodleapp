@@ -1,0 +1,172 @@
+/**
+ * App Global variables SCSS
+ * ----------------------------------------------------------------------------
+ * Place here the different files you should import to use global variables.
+ */
+/**
+ * Imported ionic string functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.string.scss
+ */
+/**
+ * Imported ionic color functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.color.scss
+ */
+/**
+ * Imported ionic color functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.font.scss
+ */
+/**
+ * Convert a font size to a dynamic font size.
+ * Fonts that participate in Dynamic Type should use
+ * dynamic font sizes.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param unit (optional) - The unit to convert to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * a maximum font size.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param maxScale - The maximum scale of the font (i.e. 2.5 for a maximum 250% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * a minimum font size.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param minScale - The minimum scale of the font (i.e. 0.8 for a minimum 80% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * maximum and minimum font sizes.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param minScale - The minimum scale of the font (i.e. 0.8 for a minimum 80% scale).
+ * @param maxScale - The maximum scale of the font (i.e. 2.5 for a maximum 250% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Imported ionic mixins for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.mixins.scss
+ */
+/**
+ * A heuristic that applies CSS to tablet
+ * viewports.
+ *
+ * Usage:
+ * @include tablet-viewport() {
+ *   :host {
+ *     background-color: green;
+ *   }
+ * }
+ */
+/**
+ * A heuristic that applies CSS to mobile
+ * viewports (i.e. phones, not tablets).
+ *
+ * Usage:
+ * @include mobile-viewport() {
+ *   :host {
+ *     background-color: blue;
+ *   }
+ * }
+ */
+/**
+ * Imported ionic mixins for SCSS from different components
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/components/grid/grid.mixins.scss
+ */
+/**
+ * App custom mixins for SCSS
+ * ----------------------------------------------------------------------------
+ * Place here our custom mixins.
+ */
+/**
+ * Same as item-push-svg-url but admits flip-rtl
+ */
+/*
+ * App Custom App variables SCSS
+ * ----------------------------------------------------------------------------
+ * Place here all custom app variables.
+ */
+/*
+ * App Global variables SCSS
+ * ----------------------------------------------------------------------------
+ * Place here all global variables.
+ */
+:root {
+  --ion-font-family: "Inter", sans-serif;
+}
+
+/**
+ * Layout Breakpoints
+ *
+ * https://ionicframework.com/docs/layout/grid#default-breakpoints
+ */
+ion-toast {
+  --color: var(--ion-text-color-step-950);
+  --button-color: var(--primary);
+  --background: var(--ion-background-color-step-800);
+}
+@media (max-width: 575.98px) {
+  ion-toast::part(container) {
+    flex-direction: column;
+  }
+}
+ion-toast.core-primary-toast {
+  --background: var(--ion-color-primary-tint);
+  --color: var(--ion-color-primary-shade);
+  --button-color: var(--ion-color-primary-shade);
+}
+ion-toast.core-secondary-toast {
+  --background: var(--ion-color-secondary-tint);
+  --color: var(--ion-color-secondary-shade);
+  --button-color: var(--ion-color-secondary-shade);
+}
+ion-toast.core-success-toast {
+  --background: var(--ion-color-success-tint);
+  --color: var(--ion-color-success-shade);
+  --button-color: var(--ion-color-success-shade);
+}
+ion-toast.core-warning-toast {
+  --background: var(--ion-color-warning-tint);
+  --color: var(--ion-color-warning-shade);
+  --button-color: var(--ion-color-warning-shade);
+}
+ion-toast.core-danger-toast {
+  --background: var(--ion-color-danger-tint);
+  --color: var(--ion-color-danger-shade);
+  --button-color: var(--ion-color-danger-shade);
+}
+ion-toast.core-info-toast {
+  --background: var(--ion-color-info-tint);
+  --color: var(--ion-color-info-shade);
+  --button-color: var(--ion-color-info-shade);
+}
+ion-toast.core-light-toast {
+  --background: var(--ion-color-light-tint);
+  --color: var(--ion-color-light-shade);
+  --button-color: var(--ion-color-light-shade);
+}
+ion-toast.core-medium-toast {
+  --background: var(--ion-color-medium-tint);
+  --color: var(--ion-color-medium-shade);
+  --button-color: var(--ion-color-medium-shade);
+}
+ion-toast.core-dark-toast {
+  --background: var(--ion-color-dark-tint);
+  --color: var(--ion-color-dark-shade);
+  --button-color: var(--ion-color-dark-shade);
+}/*# sourceMappingURL=ion-toast.css.map */

@@ -1,0 +1,15 @@
+:host .core-grading-summary-grade {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+:host .core-grading-summary-grade ion-icon {
+  flex-shrink: 0;
+}
+:host .core-grading-summary-grade .penalty-indicator-icon {
+  display: none;
+}
+:host .core-grading-summary-penalty {
+  color: var(--danger);
+  font-size: 0.75em;
+}/*# sourceMappingURL=edit-feedback-modal.css.map */

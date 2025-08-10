@@ -1,0 +1,7 @@
+ion-back-button {
+  --min-height: var(--a11y-sizing-minTargetSize);
+  --min-width: var(--a11y-sizing-minTargetSize);
+}
+ion-back-button.md::part(text) {
+  display: none;
+}/*# sourceMappingURL=ion-back-button.css.map */

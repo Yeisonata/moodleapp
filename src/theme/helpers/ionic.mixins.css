@@ -1,0 +1,28 @@
+/**
+ * Imported ionic mixins for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.mixins.scss
+ */
+/**
+ * A heuristic that applies CSS to tablet
+ * viewports.
+ *
+ * Usage:
+ * @include tablet-viewport() {
+ *   :host {
+ *     background-color: green;
+ *   }
+ * }
+ */
+/**
+ * A heuristic that applies CSS to mobile
+ * viewports (i.e. phones, not tablets).
+ *
+ * Usage:
+ * @include mobile-viewport() {
+ *   :host {
+ *     background-color: blue;
+ *   }
+ * }
+ *//*# sourceMappingURL=ionic.mixins.css.map */

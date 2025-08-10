@@ -1,0 +1,93 @@
+/**
+ * Imported ionic string functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.string.scss
+ */
+/**
+ * Imported ionic color functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.color.scss
+ */
+/**
+ * Imported ionic color functions for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.functions.font.scss
+ */
+/**
+ * Convert a font size to a dynamic font size.
+ * Fonts that participate in Dynamic Type should use
+ * dynamic font sizes.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param unit (optional) - The unit to convert to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * a maximum font size.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param maxScale - The maximum scale of the font (i.e. 2.5 for a maximum 250% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * a minimum font size.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param minScale - The minimum scale of the font (i.e. 0.8 for a minimum 80% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Convert a font size to a dynamic font size but impose
+ * maximum and minimum font sizes.
+ * @param size - The initial font size including the unit (i.e. px or pt)
+ * @param minScale - The minimum scale of the font (i.e. 0.8 for a minimum 80% scale).
+ * @param maxScale - The maximum scale of the font (i.e. 2.5 for a maximum 250% scale).
+ * @param unit (optional) - The unit to convert the initial font size to. Use this if you want to
+ * convert to a unit other than $baselineUnit.
+ */
+/**
+ * Imported ionic mixins for SCSS
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/themes/ionic.mixins.scss
+ */
+/**
+ * A heuristic that applies CSS to tablet
+ * viewports.
+ *
+ * Usage:
+ * @include tablet-viewport() {
+ *   :host {
+ *     background-color: green;
+ *   }
+ * }
+ */
+/**
+ * A heuristic that applies CSS to mobile
+ * viewports (i.e. phones, not tablets).
+ *
+ * Usage:
+ * @include mobile-viewport() {
+ *   :host {
+ *     background-color: blue;
+ *   }
+ * }
+ */
+/**
+ * Imported ionic mixins for SCSS from different components
+ * ----------------------------------------------------------------------------
+ * Extracted from
+ * https://github.com/ionic-team/ionic-framework/blob/main/core/src/components/grid/grid.mixins.scss
+ */
+/**
+ * App custom mixins for SCSS
+ * ----------------------------------------------------------------------------
+ * Place here our custom mixins.
+ */
+/**
+ * Same as item-push-svg-url but admits flip-rtl
+ *//*# sourceMappingURL=helpers.css.map */

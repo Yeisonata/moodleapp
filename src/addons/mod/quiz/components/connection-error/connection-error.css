@@ -1,0 +1,6 @@
+:host {
+  background-color: var(--danger-tint);
+}
+:host .item {
+  --background: var(--danger-tint);
+}/*# sourceMappingURL=connection-error.css.map */

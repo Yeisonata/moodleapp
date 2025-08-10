@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-versionCode="51000" id="com.moodle.moodlemobile" ios-CFBundleVersion="5.1.0.0" version="5.1.0" versionCode="51000" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Nuestra App de 
-Aprendizaje</name>
+<name>Nuestra App de Aprendizaje</name>
     <description>Somos un colegio privado y mixto fundado en 1996 con más de 1400 estudiantes en la actualidad, reconocido por nuestro enfoque humanista, educación bilingüe y el firme compromiso con la excelencia académica. Brindamos un ambiente enriquecedor desde Kinder 2 hasta grado 12º, somos el único colegio en nuestra región que ofrece el continuo del IB (Bachillerato Internacional) y estamos acreditados con el sello Cognia de alta calidad educativa. En LPV ponemos el bienestar integral en el centro de todo lo que hacemos, lo cual se refleja orgullosamente en nuestro eslogan: “I’m Happy” (Soy Feliz).</description>
     <author email="mobile@moodle.com" href="http://moodle.com">Moodle Mobile team</author>
     <content src="index.html" />

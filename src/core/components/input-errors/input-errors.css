@@ -1,0 +1,16 @@
+:host {
+  display: contents;
+}
+:host.has-errors {
+  display: block;
+  width: 100%;
+}
+:host .core-input-error {
+  padding: 4px;
+  color: var(--danger);
+  font: var(--mdl-typography-body-font-sm);
+  display: none;
+}
+:host .core-input-error:first-child {
+  display: block;
+}/*# sourceMappingURL=input-errors.css.map */

@@ -1,0 +1,9 @@
+:host ion-button {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+:host ion-button core-format-text {
+  display: inline;
+  white-space: normal;
+  word-break: normal;
+}/*# sourceMappingURL=overview-item-action-link.css.map */

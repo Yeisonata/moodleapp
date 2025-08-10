@@ -1,0 +1,14 @@
+/*
+ * App Global variables SCSS
+ * ----------------------------------------------------------------------------
+ * Place here all global variables.
+ */
+:root {
+  --ion-font-family: "Inter", sans-serif;
+}
+
+/**
+ * Layout Breakpoints
+ *
+ * https://ionicframework.com/docs/layout/grid#default-breakpoints
+ *//*# sourceMappingURL=globals.variables.css.map */

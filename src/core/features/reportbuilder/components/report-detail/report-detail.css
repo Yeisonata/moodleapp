@@ -1,0 +1,12 @@
+:host .report-title ion-item {
+  width: 100%;
+}
+:host table th, :host table td {
+  min-width: 200px;
+}
+:host core-empty-box {
+  color: var(--gray-500);
+}
+:host core-empty-box p {
+  color: var(--gray-900);
+}/*# sourceMappingURL=report-detail.css.map */
