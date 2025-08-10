@@ -5,6 +5,9 @@
  */
 
 @use "sass:color";
+:root {
+  --ion-font-family: 'Inter', sans-serif;
+}
 
 $white:       #ffffff !default;
 $gray-100:    #f8f9fa !default;
@@ -18,15 +21,15 @@ $gray-800:    #343a40 !default;
 $gray-900:    #282828 !default; // Copy text
 $black:       #000000 !default; // Avoid usage
 
-$blue:        #0f6cbf !default;
+$blue:        #0B4385 !default;
 $cyan:        #008196 !default; // Not used.
-$green:       #357a32 !default;
+$green:       #009B37 !default;
 $red:         #ca3120 !default;
 $yellow:      #f0ad4e !default;
 
-$brand-color: #f98012 !default;
+$brand-color: #0B4385 !default;
 
-$text-color:               $gray-900 !default;
+$text-color: $black !default;
 $text-color-rgb:           color-to-rgb-list($text-color) !default;
 $text-color-dark:          $white !default;
 $text-color-dark-rgb:      color-to-rgb-list($text-color-dark) !default;
@@ -43,7 +46,7 @@ $ion-item-background-dark-rgb: color-to-rgb-list($ion-item-background-dark) !def
 
 $primary:      $brand-color !default;
 $primary-dark: $brand-color !default;
-$secondary:    $gray-300 !default;
+$secondary:    $green !default;
 $danger:       $red !default;
 $warning:      $yellow !default;
 $success:      $green !default;
